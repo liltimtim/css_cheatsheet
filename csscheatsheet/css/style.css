@@ -1,0 +1,200 @@
+/*
+This targets all classes and 'zeros' out the element
+*/
+/*
+* {
+  margin: 0;
+  padding: 0;
+}
+*/
+
+body {
+  background-color: #f4f4f4;
+  color: #555555;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  /* shortcut version
+  font: normal 16px Arial, Helvetica, sans-serif;
+  */
+  /* em is a unit, used in responsive website */
+  line-height: 2em;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* clears any floats */
+.clr {
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  color: red;
+}
+
+a:active {
+  color: green;
+}
+
+a:visited {
+  color: black;
+}
+
+.container {
+  width: 80%;
+  /* sets an automatic margin to all sides */
+  margin: auto;
+}
+
+.box-1 {
+  background-color: #333333;
+  color: #ffffff;
+
+  border-right: 5px red solid;
+  border-left: 5px red solid;
+  border-top: 5px red solid;
+  border-bottom: 5px red solid;
+
+  padding: 25px;
+}
+
+/* only styles h1 INSIDE of the box-1 container */
+.box-1 h1 {
+  font-family: Tahoma;
+  font-weight: 800;
+  font-style: italic;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  word-spacing: 1em;
+}
+
+.box-2 {
+  border: 3px dotted #cccccc;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.categories {
+  width: 80%;
+  margin: auto;
+  border: 1px #ccc solid;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.categories ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.categories li {
+  padding-bottom: 8px;
+  border-bottom: dotted 1px #333;
+  padding-top: 8px;
+}
+
+.custom-form {
+  padding: 20px;
+  margin: auto;
+}
+
+.custom-form .form-group {
+  padding-bottom: 15px;
+}
+
+.custom-form label {
+  display: block;
+}
+
+.custom-form input[type="text"] {
+  padding: 8px;
+  width: 100%;
+}
+
+.button {
+  background-color: #333;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+}
+
+.button:hover {
+  background: red;
+  color: white;
+  cursor: pointer;
+}
+
+.block {
+  float: left;
+  width: 33.3%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+}
+/* these are ids so we target with # */
+#main-block {
+  float: left;
+  width: 70%;
+  box-sizing: border-box;
+}
+
+#sidebar {
+  float: right;
+  width: 30%;
+  background-color: #333;
+  color: #ffffff;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.p-box {
+  width: 800px;
+  height: 500px;
+  border: 1px solid #333;
+  margin-top: 30px;
+  /* sets child elements relative to itself */
+  position: relative;
+  background-image: url("../images/bgimage.jpg");
+  background-position: 100px 200px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.p-box h1 {
+  position: absolute;
+  top: 40px;
+  left: 200px;
+}
+
+.p-box h2 {
+  position: absolute;
+  bottom: 40px;
+  right: 100px;
+}
+
+.fixed-position {
+  position: fixed;
+  top: 20px;
+}
+/* using psuedo classes */
+.my-list li:first-child {
+  background: red;
+}
+
+.my-list li:last-child {
+  background: blue;
+}
+
+.my-list li:nth-child(5) {
+  background: yellow;
+}
+/* good for dynamic lists, targets even number of list items */
+.my-list li:nth-child(even) {
+  background: #cccccc;
+}
